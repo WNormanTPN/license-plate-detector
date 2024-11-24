@@ -1,0 +1,6 @@
+train: ../data/processed/train  # Folder contains training images
+val: ../data/processed/valid    # Folder contains validation images
+test: ../data/processed/test    # Folder contains testing images
+
+nc: 2                            # Number of classes
+names: ['plate', 'background']   # Names of classes
