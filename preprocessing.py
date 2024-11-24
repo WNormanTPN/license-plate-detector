@@ -20,7 +20,6 @@ test_processed_images_dir = './data/processed/test/images'
 test_processed_labels_dir = './data/processed/test/labels'
 
 
-
 # Create processed folders if not exist
 if not os.path.exists(train_processed_images_dir):
     os.makedirs(train_processed_images_dir)

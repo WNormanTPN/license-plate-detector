@@ -4,7 +4,11 @@ from .utils import add_border, \
             rotate_image, \
             save_image_and_labels, \
             resize_image_and_labels, \
-            apply_all_augmentations
+            apply_all_augmentations, \
+            add_border_global, \
+            random_crop_global, \
+            change_brightness_global, \
+            rotate_image_global
 
 __all__ = [
     "add_border",
@@ -13,5 +17,9 @@ __all__ = [
     "rotate_image",
     "save_image_and_labels",
     "resize_image_and_labels",
-    "apply_all_augmentations"
+    "apply_all_augmentations",
+    "add_border_global",
+    "random_crop_global",
+    "change_brightness_global",
+    "rotate_image_global"
 ]
