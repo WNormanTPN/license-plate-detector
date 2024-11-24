@@ -188,6 +188,10 @@ def save_image_and_labels(image, labels, output_image_path, output_labels_path):
     with open(output_labels_path, 'w') as label_file:
         for bbox in labels:
             class_id, x_center, y_center, width, height = bbox
+            x_center = np.clip(x_center, 0, 1)
+            y_center = np.clip(y_center, 0, 1)
+            width = np.clip(width, 0, 1)
+            height = np.clip(height, 0, 1)
             label_file.write(f"{class_id} {x_center} {y_center} {width} {height}\n")
 
 
